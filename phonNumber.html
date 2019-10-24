@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="box">
+<button type="button" onclick="checkPhoneNum()">Check</button>
+<script>
+    function checkPhoneNum() {
+        let reg = /^\([0-9]{2}\)\-\([0-9]{10}\) $/;
+        let number = document.getElementById("box");
+        if (reg.test(number) == false ) {
+            alert("số điện thoại ko hợp lệ")
+        }else {
+            alert("số điện thoại hợp lệ" )
+        }
+    }
+</script>
+</body>
+</html>
